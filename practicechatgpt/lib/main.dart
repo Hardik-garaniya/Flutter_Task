@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practicechatgpt/counterapp.dart';
 import 'package:practicechatgpt/listgrid.dart';
 import 'package:practicechatgpt/navigationdata.dart';
+import 'package:practicechatgpt/todo.dart';
 import 'WInkwell.dart';
 import 'alertdialog.dart';
 import 'formvalidation.dart';
@@ -68,7 +69,21 @@ class practice extends StatelessWidget {
             ElevatedButton(onPressed: ()
             {
               Navigator.push(context , MaterialPageRoute(builder: (context)=> firstpage()));
-            }, child: Text("Navigation And Pass Data"))
+            }, child: Text("Navigation And Pass Data")),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(onPressed: ()
+            {
+              Navigator.push(context , MaterialPageRoute(builder: (context)=> ToDoApp()));
+            }, child: Text("to do app")),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(onPressed: ()
+            {
+              Navigator.push(context , MaterialPageRoute(builder: (context)=> ToDoApp()));
+            }, child: Text("provider"))
 
 
           ],
