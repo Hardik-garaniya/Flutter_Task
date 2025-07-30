@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tasktech/provider.dart';
-import 'modelpro.dart';
+import '../modelpro.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;
